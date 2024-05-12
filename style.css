@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-li i{
+li i {
   color: green;
   margin-right: 0.5em;
 }
@@ -88,6 +88,7 @@ button {
 }
 
 .main-text {
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -138,7 +139,7 @@ button {
 .info_header h1 {
   text-align: center;
   font-size: 2.5rem;
-  width: 45%;
+  max-width: 45%;
   margin: auto;
   font-weight: 750;
 }
@@ -147,14 +148,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  margin: 3em auto;
+  max-width: 90%;
+  margin: auto;
 }
 
-.info1{
+.info1 {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  max-width: 30%;
 }
 
 .info1 div i {
@@ -165,131 +167,83 @@ button {
   border-radius: 10px;
 }
 
-.info1 h1{
+.info1 h1 {
   font-size: 1.2rem;
 }
 
-.info1 p{
+.info1 p {
   font-size: 0.9rem;
   max-width: 70%;
   color: rgb(97, 96, 96);
 }
 
-.info2{
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.info2 div i {
-  font-size: 1.5rem;
-  background-color: rgb(43, 41, 164);
-  padding: 0.5em;
-  color: white;
-  border-radius: 10px;
-}
-
-.info2 h1{
-  font-size: 1.2rem;
-}
-
-.info2 p{
-  font-size: 0.9rem;
-  max-width: 70%;
-  color: rgb(97, 96, 96);
-}
-
-.info3{
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.info3 div i {
-  font-size: 1.5rem;
-  background-color: rgb(43, 41, 164);
-  padding: 0.5em;
-  color: white;
-  border-radius: 10px;
-}
-
-.info3 h1{
-  margin-top: 0.5em;
-  font-size: 1.2rem;
-}
-
-.info3 p{
-  font-size: 0.9rem;
-  max-width: 70%;
-  color: rgb(97, 96, 96);
-}
-
-.ln1{
+.ln1 {
   display: flex;
   align-items: center;
   max-width: 90%;
   margin: auto;
 }
 
-.ln1 div{
+.ln1 div {
   max-width: 50%;
 }
 
-.ln1 div img{
+.ln1 div img {
   max-width: 100%;
 }
 
-.ln1 div h1{
+.ln1 div h1 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 0.6em;
 }
 
-.ln1 div p{
+.ln1 div p {
   font-size: 0.9rem;
   margin-bottom: 1.7em;
   max-width: 58%;
 }
 
-ul{
+ul {
   display: flex;
   flex-direction: column;
   gap: 0.4em;
   margin-bottom: 3em;
 }
 
-ul li{
+ul li {
   font-size: 0.9rem;
 }
 
-.ln2{
+.ln2 {
   display: flex;
   align-items: center;
-  max-width: 90%;
-  margin: 2em auto;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 1em;
   gap: 2em;
 }
 
-.ln2 div{
+.ln2 div {
   max-width: 100%;
 }
 
-.ln2 div img{
+.ln2 div img {
   max-width: 100%;
 }
 
-.ln2 div h1{
+.ln2 div h1 {
   font-size: 3rem;
   max-width: 60%;
   margin-bottom: 0.6em;
 }
 
-.ln2 div p{
+.ln2 div p {
   max-width: 60%;
   margin-bottom: 1.6em;
 }
 
-.title_bar{
+.title_bar {
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -303,7 +257,7 @@ ul li{
   margin-bottom: 4em;
 }
 
-.green{
+.green {
   margin: 6em 0 0 0;
   color: white;
   padding: 1.2em 1.8em;
@@ -314,13 +268,13 @@ ul li{
   font-weight: 500;
 }
 
-.foot_flex{
+.foot_flex {
   display: flex;
   align-items: start;
   gap: 6em;
 }
 
-.ff1{
+.ff1 {
   margin: 4em;
   display: flex;
   flex-direction: column;
@@ -328,17 +282,17 @@ ul li{
   margin-right: 6em;
 }
 
-.foot_flex .logo{
+.foot_flex .logo {
   font-size: 2.5rem;
 }
 
-.logo_flex{
+.logo_flex {
   display: flex;
   gap: 1em;
   justify-content: center;
 }
 
-.logo_flex div i{
+.logo_flex div i {
   font-size: 0.8rem;
   color: white;
   background-color: black;
@@ -346,20 +300,110 @@ ul li{
   border-radius: 50px;
 }
 
-.ff2{
+.ff2 {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 
-.ff2 div{
+.ff2 div {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
 
-.cr{
+.cr {
   max-width: 100%;
   text-align: center;
   margin: 5em;
+}
+
+@media screen and (max-width: 820px) {
+  .hero {
+    margin: 0%;
+    padding: 1em;
+  }
+
+  .main-image {
+    max-width: 50%;
+  }
+
+  .main-text {
+    max-width: 100%;
+  }
+
+  .main-text h1 {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+
+  .main-text p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .info_header {
+    margin: 0%;
+  }
+
+  .info_header h1 {
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .info_flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    margin-top: 3em;
+  }
+
+  .info_flex div {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .info1 {
+    gap: 1em;
+    text-align: center;
+  }
+
+  .info1 p {
+    max-width: 100%;
+  }
+
+  .info1 div i {
+    margin: 0.7em;
+  }
+
+  .ln1 div {
+    max-width: 100%;
+    margin-bottom: 4em;
+  }
+
+  .ln1 div h1 {
+    max-width: 100%;
+    font-size: clamp(2.3rem, 1.3rem, 3rem);
+  }
+
+  .ln2 div {
+    max-width: 100%;
+    margin-bottom: 4em;
+  }
+
+
+  .ln2 div h1 {
+    max-width: 100%;
+    font-size: clamp(2.4rem, 1.3rem, 3rem);
+  }
+
+  .ff2{
+    display: none;
+  }
+
+  .ff1{
+    max-width: 100%;
+    margin: auto;
+  }
 }
