@@ -44,7 +44,7 @@ A dynamic and responsive banking website built using modern web development tech
 
 ## Screenshots
 
-![Homepage Screenshot](./banking landing page.png)
+![Homepage Screenshot](https://github.com/OsuwakeEdet/banking_website/blob/main/banking%20landing%20page.png?raw=true)
 
 
 ## License
