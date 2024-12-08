@@ -58,6 +58,3 @@ This project is licensed under the [MIT License](LICENSE).
 **Osuwake Emana**  
 *Frontend Developer & Software Engineering Student*  
 [LinkedIn](https://www.linkedin.com/in/your-link) | [Twitter](https://twitter.com/your-handle)  
-```
-
-Replace placeholders like `username`, links, and optional sections with the actual details of your project. Let me know if you need help customizing it!
