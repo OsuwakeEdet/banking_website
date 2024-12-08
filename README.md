@@ -1,6 +1,6 @@
 Here's a basic Markdown template for your GitHub repository named **Banking_Website**:
 
-```markdown
+
 # Banking_Website
 
 A dynamic and responsive banking website built using modern web development technologies. This project showcases a clean and user-friendly interface, with core banking functionalities.
