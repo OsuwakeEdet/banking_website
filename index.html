@@ -1,216 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Banking Landing Page</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo"><a href="#">Quickpay</a></div>
 
-        <div class="nav1">
-          <div><a href="#">Bank account</a></div>
-          <div><a href="#">Features</a></div>
-          <div><a href="#">How it works</a></div>
-          <div><a href="#">For business</a></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts - Montserrat and Silkscreen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Boxicons - Icons library -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Quickpay - Fast, Secure Banking Solutions</title>
+</head>
+
+<body>
+  <!-- Header contains navigation bar -->
+  <header>
+    <!-- Main navigation element -->
+    <nav class="navbar">
+      <!-- Logo section -->
+      <div class="logo"><a href="index.html">Quickpay</a></div>
+
+      <!-- Main navigation links -->
+      <div class="navbar-item1">
+        <div><a href="#">Bank account</a></div>
+        <div><a href="#">Cards</a></div>
+        <div><a href="#">Loans</a></div>
+        <div><a href="#">Transfers</a></div>
+        <div><a href="#">Payments</a></div>
+        <div><a href="#">Blog</a></div>
+      </div>
+
+      <!-- Authentication buttons -->
+      <div class="navbar-item2">
+        <div>
+          <a href="#">sign in</a>
         </div>
 
-        <div class="nav2">
+        <div>
+          <a href="#">
+            <button class="btn1">Sign Up</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="hamburger-menu">
+        <button class="hamburger"><i class='bx bx-menu'></i></button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- hero section section with main content -->
+    <section class="hero-section">
+      <div class="hero-section-text">
+        <h1>More money in your pocket with <span class="brand-name">Quickpay</span></h1>
+        <p>
+          Spend, save and manage your money, all in one place, enjoy instant transfers, top security, and 24/7 access
+          with no hidden fees. Manage your money
+          smarter with our easy-to-use digital platform!.
+        </p>
+        <div class="main_btn"><button>Sign Up for Free</button></div>
+      </div>
+
+      <div class="main-image">
+        <img src="pexels-maitree-rimthong-444156-1602726.jpg" alt="Person using a mobile banking app" />
+      </div>
+    </section>
+
+    <!-- Information section showcasing banking features -->
+    <section class="info-section">
+      <!-- Section header -->
+      <div class="info-header">
+        <h1>Banking that works around the world</h1>
+      </div>
+
+      <!-- Flex container for feature cards -->
+      <div class="info-container">
+        <!-- Easy payments feature card -->
+        <div class="info-card">
           <div>
-            <a href="#"> sign in </a>
+            <i class="bx bxs-wallet-alt"></i>
           </div>
+          <h2>Easy payments</h2>
+          <p>
+            Set up standing orders in-app, and send money to other bank
+            accounts instantly.
+          </p>
+        </div>
 
+        <!-- Web and mobile access feature card -->
+        <div class="info-card">
           <div>
-            <a href="#">
-              <button class="btn1">sign up</button>
-            </a>
+            <i class="bx bx-devices"></i>
           </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="main-text">
-          <h1>More money in your pocket with Quickpay</h1>
+          <h2>Web and mobile access</h2>
           <p>
-            Spend, save and manage your money, all in one place. all on your
-            smartphone, it's FREE.
+            Manage your account from your phone and computer. Do everything
+            from the app.
           </p>
-          <div class="main_btn"><button>sign up for free</button></div>
         </div>
 
-        <div class="main-image">
-          <img src="pexels-cottonbro-3205741.jpg" alt="" />
-        </div>
-      </section>
-
-      <section class="info_section">
-        <div class="info_header">
-          <h1>Banking that works around the world</h1>
-        </div>
-
-        <div class="info_flex">
-          <div class="info1">
-            <div>
-              <i class="bx bxs-wallet-alt"></i>
-            </div>
-            <h1>Easy payments</h1>
-            <p>
-              Set up standing orders in-app, and send money to other bank
-              accounts instantly.
-            </p>
+        <!-- Account control feature card -->
+        <div class="info-card">
+          <div>
+            <i class='bx bxs-shield-alt-2'></i>
           </div>
-
-          <div class="info1">
-            <div>
-              <i class="bx bx-devices"></i>
-            </div>
-            <h1>Web and mobile access</h1>
-            <p>
-              Manage your account from your phone and computer. Do everything
-              from the app.
-            </p>
-          </div>
-
-          <div class="info1">
-            <div>
-              <i class="ri-shield-cross-fill"></i>
-            </div>
-            <h1>Control over from your account</h1>
-            <p>
-              Your bank account let you easily lock your card in the app, and
-              later reorder it with a tap with button.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="ln1">
-        <div>
-          <h1>Stay up to date with your spending habits</h1>
-
+          <h2>Control over from your account</h2>
           <p>
-            Your account uses artificial intelligence to automatically
-            categorize your spending and show them right in the app.
+            Your bank account let you easily lock your card in the app, and
+            later reorder it with a tap with button.
           </p>
-
-          <ul>
-            <li><i class="ri-check-fill"></i> Manage your bank account</li>
-            <li>
-              <i class="ri-check-fill"></i> View all your smartly catigorised
-              transcations all in one place
-            </li>
-          </ul>
-
-          <div class="main_btn">
-            <button>Learn more <i class="bx bx-right-arrow-alt"></i></button>
-          </div>
         </div>
-        <div>
-          <img src="undraw_Mobile_interface_re_1vv9.png" alt="" />
-        </div>
-      </section>
 
-      <section class="ln2">
-        <div>
-          <img src="undraw_Credit_card_re_blml.png" alt="" />
-        </div>
-        <div>
-          <h1>Simplicity of a credit card</h1>
+      </div>
+    </section>
+
+    <!-- Section showcasing spending tracking features -->
+    <section class="spending-tracking-section">
+      <div class="spending-tracking-text">
+        <h1>Stay up to date with your spending habits</h1>
+
+        <p>
+          Your account uses artificial intelligence to automatically
+          categorize your spending and show them right in the app.
+        </p>
+
+        <div class="spending-features-list">
+          <p> <i class='bx bx-check' id="check-mark"></i> Manage your bank account</p>
           <p>
-            Manage your spending, savings and bills. Spend and withdraw your
-            money anywhere around the world.
+            <i class='bx bx-check' id="check-mark"></i> View all your smartly categorized
+            transactions all in one place
           </p>
-
-          <ul>
-            <li>
-              <i class="ri-check-fill"></i> Grants security control against
-              frauds
-            </li>
-            <li>
-              <i class="ri-check-fill"></i> Earn increased credit cashback
-            </li>
-          </ul>
-
-          <div class="main_btn">
-            <button>Learn more <i class="bx bx-right-arrow-alt"></i></button>
-          </div>
         </div>
-      </section>
 
-      <section class="title_bar">
+        <div class="main_btn">
+          <button>Learn more <i class="bx bx-right-arrow-alt"></i></button>
+        </div>
+      </div>
+
+      <!-- Image showcasing mobile banking interface -->
+      <div class="spending-tracking-img">
+        <img src="undraw_Mobile_interface_re_1vv9.png" alt="Illustration of a mobile banking interface" />
+      </div>
+    </section>
+
+    <!-- Section highlighting credit card features -->
+    <section class="credit-card-section">
+      <div class="credit-card-img">
+        <img src="undraw_Credit_card_re_blml.png" alt="Illustration of a credit card" />
+      </div>
+
+      <div class="credit-card-text">
+        <h1>Simplicity of a credit card</h1>
+        <p>
+          Manage your spending, savings and bills. Spend and withdraw your
+          money anywhere around the world.
+        </p>
+
+        <div class="spending-features-list">
+          <p>
+            <i class='bx bx-check' id="check-mark"></i> Grants security control against
+            frauds
+          </p>
+          <p>
+            <i class='bx bx-check' id="check-mark"></i> Earn increased credit cashback
+          </p>
+        </div>
+
+        <div class="main_btn">
+          <button>Learn more <i class="bx bx-right-arrow-alt"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-action section with signup prompt -->
+    <section class="signin-prompt-section">
+      <div class="signin-prompt-content">
         <h1>
           Sign up in minutes.<br />
           Quick and easy.<br />
         </h1>
 
-        <button class="green">sign up for free</button>
-      </section>
-    </main>
-    <footer>
-      <section class="foot_flex">
-        <div class="ff1">
-          <h1 class="logo">Quickpay</h1>
+        <button class="signin-prompt-btn">sign up for free</button>
 
-          <div class="logo_flex">
-            <div><i class="ri-facebook-fill"></i></div>
-            <div><i class="ri-linkedin-fill"></i></div>
-            <div><i class="ri-twitter-x-fill"></i></div>
-            <div><i class="ri-instagram-line"></i></div>
-          </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer section containing company information and links -->
+  <footer>
+    <!-- Main footer container with brand and navigation sections -->
+    <section class="footer-container">
+      <!-- Brand section with logo and social media icons -->
+      <div class="footer-brand">
+        <h1 class="footer-logo">Quickpay</h1>
+
+        <!-- Social media icons container -->
+        <div class="social-icons-container">
+          <div class="social-icon"><i class='bx bxl-facebook'></i></div>
+          <div class="social-icon"><i class='bx bxl-linkedin'></i></div>
+          <div class="social-icon"><i class='bx bxl-twitter'></i></div>
+          <div class="social-icon"><i class='bx bxl-instagram-alt'></i></div>
         </div>
+      </div>
 
-        <div class="ff2">
+      <div class="footer-links">
+        <!-- Account related links section -->
+        <div class="footer-link-item">
           <h1>Account</h1>
           <div>
-            <p>Bank account</p>
-            <p>Business account</p>
-            <p>Compare accounts</p>
+            <ul>
+              <li><a href="#">Bank account</a></li>
+              <li><a href="#">Business account</a></li>
+              <li><a href="#">Compare accounts</a></li>
+            </ul>
           </div>
         </div>
 
-        <div class="ff2">
+        <!-- Features and services links section -->
+        <div class="footer-link-item">
           <h1>Features</h1>
           <div>
-            <p>payments</p>
-            <p>online banking</p>
-            <p>cashback</p>
-            <p>Apple pay</p>
-            <p>Paypal</p>
-            <p>Receipts</p>
+            <ul>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Online banking</a></li>
+              <li><a href="#">Cashback</a></li>
+              <li><a href="#">Paypal</a></li>
+              <li><a href="#">Receipts</a></li>
+            </ul>
           </div>
         </div>
 
-        <div class="ff2">
+        <!-- Company information links section -->
+        <div class="footer-link-item">
           <h1>Company</h1>
           <div>
-            <p>careers</p>
-            <p>About</p>
-            <p>Blog</p>
-            <p>Press</p>
-            <p>Patners</p>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
           </div>
         </div>
-      </section>
-      <section class="cr">
-        &#169; 2024 Quickpay. All Rights Reserved | Crafted by KaIzEn
-      </section>
-    </footer>
-  </body>
+      </div>
+    </section>
+
+    <!-- Copyright and signature section -->
+    <section class="footer-copyright">
+      <p class="footer-copyright-text">&#169; 2024 Quickpay. All Rights Reserved.</p>
+      <p class="footer-copyright-signature">Crafted with ❤️ by the Emana Osuwake Edet</p>
+    </section>
+  </footer>
+</body>
+
 </html>
